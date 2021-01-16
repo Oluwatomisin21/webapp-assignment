@@ -1,59 +1,184 @@
-/*Image style*/
+/*CSS for header*/
 
-img {
-    width: 100%;
-    .row {
-        display: flex;
-        align-items: stretch;
-    }
+.ex-box {
+    border: 3px solid #aaa;
+    background-color: #eee;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 30px;
 }
 
-.story {
-    border 1px solid #333;
-    padding 5px;
+.ex-box:last-of-type {
+    clear: right;
+}
+
+
+/*CSS for body */
+
+.head-box {
+    font-size: 60px red;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: red;
+    margin: 60px 0 60px 0;
+    border: 1px solid #000;
+    padding: 7px 7px;
 }
 
 .story-title {
     font-weight: normal;
     font-style: italic;
     font-size: 30px;
-    margin: 15px;
+    margin: 15px 0;
     text-align: center;
+}
+
+.story-img {
+    width: 100%;
 }
 
 .story-text {
     line-height: 1.5;
+    font-size: 18;
 }
 
-.quarter {
-    width: 25px;
-}
-
-.half {
-    width: 50%;
-    flex-grow:
-}
-
-.three-quarter {
-    width: 75%;
-}
-
-.nav-item {
-    width: 100%;
-    flex: 1;
+.callis {
+    border: 2px solid #000;
     display: flex;
-    align-item: center;
-    padding-left: 25px;
-    font-size: 30px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.ex-box-left {
+    width: 25%;
+    border: 3px solid rgb(56, 20, 20);
+    align-content: left;
+    flex-grow: 1;
+}
+
+.ex-box-middle {
+    width: 50%;
+    border: 3px solid rgb(56, 20, 20);
+    align-content: center;
+    flex-grow: 2;
+}
+
+.ex-box-right {
+    width: 25%;
+    border: 3px solid rgb(56, 20, 20);
+    align-content: right;
+    flex-grow: 2;
+}
+
+.ex-box-lr {
+    width: 75%;
+    border: 3px solid rgb(56, 20, 20);
+    align-content: down;
+    flex-grow: 1;
+}
+
+
+/*css to all links on the lower right hand side */
+
+.all-links {
+    text-decoration: none;
     color: #555;
+}
+
+
+/*hover effect*/
+
+.all-link a:hover {
+    text-decoration: underline;
+}
+
+
+/*CSS to address flex response */
+
+.all-links {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*CSS to to all element of list under the unordered list*/
+
+.list {
+    font-size: large;
+    align-items: center;
+    padding-left: 25px;
+    color: #555;
+    display: flex;
+    width: 100%;
+    font-size: 50px;
+    font-family: bold;
+    padding: 0;
+    flex: 1;
+}
+
+
+/* color effect of all links on lower rightright */
+
+.list:nth-child(1) {
+    background-color: aquamarine;
+}
+
+.list:nth-child(2) {
+    background-color: antiquewhite;
+}
+
+.list:nth-child(3) {
+    background-color: greenyellow;
+}
+
+.list:nth-child(4) {
+    background-color: burlywood;
+}
+
+.list:nth-child(5) {
+    background-color: yellowgreen;
+}
+
+
+/* original css codes that addess individual 
+link from tech to sport 
+.tech {
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    padding: 1%;
+    background-color: rgb(138, 103, 103);
+}
+.poli {
+    font-weight: bold;
+    font-size: larger;
+    padding: 1%;
+    background-color: rgb(226, 193, 193);
+}
+.loca {
+    font-weight: bold;
+    font-size: larger;
+    padding: 1%;
+    background-color: rgb(193, 226, 196);
 }
 
-.nav-item a:hover {
-    text-indent: underline;
+.opin {
+    font-weight: bold;
+    font-size: larger;
+    padding: 1%;
+    background-color: rgb(226, 193, 218);
 }
 
-.nav-item:nth-child(1) {
-    background-color: #ffeaff;
-}
+.spor {
+    font-weight: 900;
+    font-size: larger;
+    padding: 1%;
+    background-color: rgb(58, 61, 87);
+} */
